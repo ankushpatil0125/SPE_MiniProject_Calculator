@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE_NAME = 'Scientific_Calculator_Image'
+        DOCKER_IMAGE_NAME = 'scientific_calculator_image'
         GITHUB_REPO_URL = 'https://github.com/ankushpatil0125/SPE_MiniProject_Calculator.git'
         EMAIL_TO = 'ankushpatil488@gmail.com'
     }
@@ -37,7 +37,7 @@ pipeline {
             steps {
                 script{
                     docker.withRegistry('', 'DockerHubCred') {
-                    sh 'docker tag Scientific_Calculator ankushpatil0125/scientific_calculator_image:latest'
+                    sh 'docker tag scientific_calculator ankushpatil0125/scientific_calculator_image:latest'
                     sh 'docker push ankushpatil0125/scientific_calculator_image'
                     }
                  }
