@@ -37,8 +37,8 @@ pipeline {
             steps {
                 script{
                     docker.withRegistry('', 'DockerHubCred') {
-                    sh 'docker tag Scientific_Calculator ankushpatil0125/Scientific_Calculator_Image:latest'
-                    sh 'docker push ankushpatil0125/Scientific_Calculator_Image'
+                    sh 'docker tag Scientific_Calculator ankushpatil0125/scientific_calculator_image:latest'
+                    sh 'docker push ankushpatil0125/scientific_calculator_image'
                     }
                  }
             }
