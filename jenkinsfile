@@ -12,7 +12,6 @@ pipeline {
             steps {
                 script {
                     // Checkout the code from the GitHub repository
-		    //comment
                     git branch: 'main', url: "${GITHUB_REPO_URL}"
                 }
             }
