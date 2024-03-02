@@ -4,7 +4,7 @@ pipeline {
     environment {
         DOCKER_IMAGE_NAME = 'scientific_calculator_image'
         GITHUB_REPO_URL = 'https://github.com/ankushpatil0125/SPE_MiniProject_Calculator.git'
-        EMAIL_TO = 'ankushpatil459@gmail.com'
+        EMAIL_TO = 'ankushpatil488@gmail.com'
     }
 
     stages {
